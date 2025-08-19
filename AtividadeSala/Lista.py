@@ -12,7 +12,7 @@ listaum[2].remove("Hihi")
 print(listaum)
 
 #Exercício 3
-listadois = listaum
+listadois = listaum[:]
 print(id(listaum) == id(listadois))
 
 #Exercício 4
