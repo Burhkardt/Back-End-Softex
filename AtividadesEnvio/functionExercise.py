@@ -100,4 +100,5 @@ print(calculadora())
 def aplicar_operacao(x, y, op):
     return op(x,y)
 
+
 print(aplicar_operacao(3, 4, soma))
