@@ -1,4 +1,3 @@
-#Exercício 1
 class Usuario():
     def __init__(self, nome, email):
         self.nome = nome
@@ -34,15 +33,15 @@ print(gerente.nome)
 
 class Autenticacao():
     def login(self):
-        print("Uau, feito login :p")
+        pass
     def status(self):
-        print("A")
+        pass
 
 class Permissao():
     def verificar_permissao(self):
-        print("Feito permissão")
+        pass
     def status(self):
-        print()
+        pass
 
 class Administrador(Autenticacao, Permissao):
     def __init__(self, nome, email):
