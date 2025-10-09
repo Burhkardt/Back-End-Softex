@@ -5,7 +5,7 @@ class Animal(ABC):
     def __init__(self, nome):
         self.nome = nome
     @abstractmethod
-    def falar(ABC):
+    def falar():
         pass
 class Cachorro(Animal):
     def __init__(self, nome, raca):
@@ -33,10 +33,10 @@ except:
 #Exercício 3
 class FormaGeometrica(ABC):
     @abstractmethod
-    def area(ABC):
+    def area():
         ...
     @abstractmethod
-    def perimetro(ABC):
+    def perimetro():
         ...
 class Retangulo(FormaGeometrica):
     def __init__(self, base, altura):
