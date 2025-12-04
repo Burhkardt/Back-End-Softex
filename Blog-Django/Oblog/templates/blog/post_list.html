@@ -1,0 +1,12 @@
+{% extends "./base.html" %}
+{% block content %}
+    {% for x in posts %}
+        <article class="post">
+            <h2><a href="/">{{x.Titulo}}</a></h2>
+            <time class="date">Criado em: {{x.Data_criacao}}</time>
+            <p class="author">Autor: {{x.Autor}}</p>
+            {{x.Texto}}
+            <hr>
+        </article>
+    {% endfor %}
+{% endblock %}
