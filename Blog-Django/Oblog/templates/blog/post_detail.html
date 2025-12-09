@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <article class="post">
+        {% if posts.Data_criacao %}
+            <time class="date">Criado em: {{ posts.Data_criacao }}</time>
+        {% endif %}
+            <h2>{{posts.Titulo}}</h2>
+            <a>{{posts.Texto}}</a>
+    </article>
+{% endblock %}

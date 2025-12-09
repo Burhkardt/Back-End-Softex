@@ -22,3 +22,6 @@ class Post(models.Model):
 
     def __str__(self):
         return f"{self.Titulo}\n{self.Autor}"
+    
+    def __repr__(self):
+        return f"<{self.__class__.__name__} id={self.id} Titulo={self.Titulo!r} Autor={self.Autor!r} posted={self.posted}>"
